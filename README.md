@@ -22,6 +22,7 @@ npm install && npm run clean && npm test
 - O arquivo da suíte de teste está em: `test/specs/boards.js`
 - Já foi implementado um teste o qual entra no site do trello, loga com o usuário `qachallengesoftbox@email.com` e senha `S0ftbox123`, cria um quadro chamado `Gerenciamento de Projetos 2019` e valida se o quadro foi criado com sucesso
 - É necessário que você implemente no mesmo arquivo `test/specs/boards.js` o teste para a remoção deste mesmo quadro criado acima.
+- Não esqueça de commitar as alterações feitas no seu repositório
 
 Segue abaixo o passo a passo para realizar a remoção do quadro
 
