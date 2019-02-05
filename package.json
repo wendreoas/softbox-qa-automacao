@@ -1,0 +1,27 @@
+{
+  "name": "softbox-qa-challenge",
+  "version": "1.0.0",
+  "description": "Projeto para avaliação de conhecimento para automação de testes web para softbox",
+  "scripts": {
+    "clean": "node ./node_modules/rimraf/bin.js screenshots errorShots",
+    "test": "./node_modules/webdriverio/bin/wdio wdio.conf.js"
+  },
+  "keywords": [
+    "webdriverio",
+    "mocha",
+    "test",
+    "selenium"
+  ],
+  "dependencies": {
+    "@types/mocha": "^2.2.41",
+    "@types/webdriverio": "^4.7.1",
+    "chai": "~4.1.2",
+    "mkdirp": "^0.5.1",
+    "moment": "^2.22.2",
+    "rimraf": "^2.6.2",
+    "wdio-selenium-standalone-service": "~0.0.9",
+    "wdio-spec-reporter": "~0.1.2",
+    "webdriverio": "4.13.0",
+    "wdio-mocha-framework": "^0.6.1"
+  }
+}
