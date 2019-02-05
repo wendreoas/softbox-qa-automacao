@@ -11,7 +11,7 @@ Para rodar e desenvolver os testes, é necessário validar os seguintes pré req
 
 ## Instruções
 
-1. Faça o fork desse projeto
+1. Faça o fork desse projeto (Link: https://github.com/roggerfe/softbox-qa-automacao)
 2. Execute a suíte de testes através do comando:
 
 
