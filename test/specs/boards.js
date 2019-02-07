@@ -11,9 +11,18 @@ describe('Boards Trello', function () {
         boardListPage.open();
         boardListPage.criarQuadro("Gerenciamento de projetos 2019");
         expect(boardPage.getNomeQuadro()).to.equal("Gerenciamento de projetos 2019");
+
+        
     });
 
+             
+    
     it("Removendo o board criado acima", function() {
+
+        browser.click ('[title="Gerenciamento de projetos 2019"]');
+        browser.click ('.mod-show-menu');
+
+        Thread.sleep(8000);
         /**
          * Criar o script que faz a remoção do board criado acima, Gerencimaneto de projetos 2019
          * 1. Acessar página de lista de boards
