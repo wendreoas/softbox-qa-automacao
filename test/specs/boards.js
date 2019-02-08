@@ -24,15 +24,12 @@ describe('Boards Trello', function () {
          browser.click ('.js-confirm.full.negate');
          browser.click ('.quiet.js-delete');
          browser.click ('.js-confirm.full.negate');
-         //browser.click ('classic > div.pop-over.is-shown > div > div:nth-child(2) > div > div > div > input');
          browser.click ('.header-btn-text');
+         //browser.click ('.js-search-boards');
+         //if (browser.getText("//*[contains(text(),'Quadro')]")) {
+         //    browser.debug();
+         //}
         
-
-        /**
-         
-         * 5. Confirma mensagem de sucesso que o quadro está fechado
-         * 6. Acessar página da lista de quadros novamente e verificar se de fato o quadro foi removido
-         */
         
     });
 });
