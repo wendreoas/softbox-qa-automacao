@@ -24,9 +24,10 @@ describe('Boards Trello', function () {
          browser.click ('.js-confirm.full.negate');
          browser.click ('.header-logo-default');
          browser.waitForText('.home-left-sidebar-container');
-         var quadro = browser.isExisting ('[title="Projeto automacao"]');
+         var quadro = browser.isExisting ('div[title="Projeto automacao"]');
         console.log (quadro);
-        console.log (browser.element("[title='Projeto automacao']").getText());
+        expect (quadro).to.equal(false);
+
 
     });
 });
