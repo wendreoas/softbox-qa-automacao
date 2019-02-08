@@ -11,10 +11,8 @@ describe('Boards Trello', function () {
         boardListPage.open();
         boardListPage.criarQuadro("Projeto automacao");
         expect(boardPage.getNomeQuadro()).to.equal("Projeto automacao");
-
         
     });
-
             
     
     it("Removendo o board criado acima", function() {   
@@ -24,12 +22,11 @@ describe('Boards Trello', function () {
          browser.click ('.js-confirm.full.negate');
          browser.click ('.quiet.js-delete');
          browser.click ('.js-confirm.full.negate');
-         browser.click ('.header-btn-text');
-         //browser.click ('.js-search-boards');
-         //if (browser.getText("//*[contains(text(),'Quadro')]")) {
-         //    browser.debug();
-         //}
-        
-        
+         browser.click ('.header-logo-default');
+         browser.waitForText('.home-left-sidebar-container');
+         var quadro = browser.isExisting ('[title="Projeto automacao"]');
+        console.log (quadro);
+        console.log (browser.element("[title='Projeto automacao']").getText());
+
     });
 });
